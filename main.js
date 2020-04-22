@@ -20,7 +20,6 @@ function checkIfInputEmpty(inputElement, iconElement, messageElement) {
     inputElement.classList.add('input--error');
     inputElement.classList.add('input--error');
   } else {
-    console.log(!messageElement.classList.contains('hidden'))
     if (!iconElement.classList.contains('hidden')) iconElement.classList.add('hidden');
     if (!messageElement.classList.contains('hidden')) messageElement.classList.add('hidden');
     if (inputElement.classList.contains('input--error')) inputElement.classList.remove('input--error');
@@ -44,6 +43,4 @@ form.addEventListener('submit', (event) => {
     if (!emailAddressInvalidErrorMessage.classList.contains('hidden')) emailAddressInvalidErrorMessage.classList.add('hidden');
     if (emailInput.classList.contains('input--error')) emailInput.classList.remove('input--error');
   }
-
-
 });
